@@ -19,7 +19,7 @@ public class DcController {
 	@RequestMapping("/dc")
 	@ResponseBody
 	private String dc() throws InterruptedException {
-		//Thread.sleep(5000L);
+		Thread.sleep(5000L);
 		String services="Service1: " + discoveryClient.getServices();
 		System.out.println(services);
 		return services;
